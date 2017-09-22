@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/maxim218/3D_CubeShooter/issues"
   },
-  "homepage": "https://github.com/maxim218/3D_CubeShooter#readme"
+  "homepage": "https://github.com/maxim218/3D_CubeShooter#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
