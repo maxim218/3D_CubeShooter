@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3Dshooter</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+</head>
+<body>
+
+
+<div id = "gameBox" hidden>
+    <div id = "centerBoxForGame" width = "800px" height = "600px" hidden></div>
+    <div id = "scoreGameBox"></div>
+</div>
+
+
+<div id = "centerBox" hidden>
+
+    <div id = "mainMenu" class = "myBox">
+        <span class = "bigText">3Dshooter</span>
+        <hr>
+        <div class = "separator"></div>
+        <div align = "center">
+            <button id = "b1">Начать игру</button>
+            <div class = "separator"></div>
+            <button id = "b2">Набранные очки</button>
+            <div class = "separator"></div>
+            <button id = "b3">Описание игры</button>
+            <div class = "separator"></div>
+            <button id = "b4">Об авторе</button>
+        </div>
+    </div>
+
+    <div id = "aboutCreator" class = "myBox" hidden>
+        <span class = "bigText">Об авторе</span>
+        <hr>
+        <div>
+            <p>
+                Привет! Надеюсь, тебе понравилась игра, и поэтому ты
+                решил (или решила) прочитать информацию обо мне.
+            </p>
+            <p>
+                Меня зовут Максим. На данный момент я учусь в МГТУ им. Н.Э. Баумана.
+                Я сильно увлекаюсь спортом и программированием.
+                Очень люблю учиться и никогда не пропускаю лекции и семинары.
+            </p>
+            <div class = "separator"></div>
+            <div align = "center">
+                <button id = "b5">Назад</button>
+            </div>
+        </div>
+    </div>
+
+    <div id = "aboutGame" class = "myBox" hidden>
+        <span class = "bigText">Описание игры</span>
+        <hr>
+        <div>
+            <p>
+                Во время игры на тебя с разных сторон будут лететь кубики.
+                Тебе необходимо отстреливать кубики, щёлкая по ним мышкой.
+                Если кубик подлетит к тебе слишком близко, то ты проиграешь.
+                Чем больше кубиков ты отстрелишь, тем больше очков получишь.
+            </p>
+            <p>
+                Кубики могут лететь с разной скоростью и менять свою траекторию во время движения.
+                Будь осторожен.
+            </p>
+            <div class = "separator"></div>
+            <div align = "center">
+                <button id = "b6">Назад</button>
+            </div>
+        </div>
+    </div>
+
+    <div id = "scoreOfUser" class = "myBox" hidden>
+        <span class = "bigText">Набранные очки</span>
+        <hr>
+        <div>
+            <p>
+                Здесь отображаются набранные вами очки.
+                Каждое очко соответствует одному отстреленному кубику.
+            <p id = "resultsList">
+                На данный момент вы ни разу не играли на этом компьютере, поэтому списка очков пока нет.
+            </p>
+            <div class = "separator"></div>
+            <div align = "center">
+                <button id = "b7">Назад</button>
+            </div>
+        </div>
+    </div>
+
+    <div id = "gameResultBox" class = "myBox" hidden>
+        <span class = "bigText">Game over</span>
+        <hr>
+        <div>
+            <p>
+                Один из кубиков подлетел к тебе слишком близко и сделал с тобой очень страшные вещи.
+            <p>
+            <p>
+                Попробуй сыграть ещё раз, и у тебя получится набрать больше очков.
+            <p>
+                <span id = "resultLabel" class = "bigText"></span>
+            </p>
+            <div class = "separator"></div>
+            <div align = "center">
+                <button id = "b9">Главное меню</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src = "three.min.js"></script>
+<script src = "Projector.js"></script>
+
+<script src = "basicScript.js"></script>
+<script src = "storageScript.js"></script>
+<script src = "gameScript.js"></script>
+<script src = "mainScript.js"></script>
+
+</body>
+</html>
